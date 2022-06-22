@@ -49,7 +49,7 @@ def bul(client, message):
         )
         print(str(e))
         return
-    m.edit("`Mahnı mahnı yüklənir,zəhmət olmasa gözləyin...⏱`")
+    m.edit("`Mahnı yüklənir,zəhmət olmasa gözləyin...⏱`")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
