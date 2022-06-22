@@ -9,7 +9,7 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://i.ibb.co/khRz42f/Turkish-Voice.jpg",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Cinom Müzik 🎙️](https://t.me/lordchattt).**"""),
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə mahnı oxuya bilən botam. Ban yetkisiz, Səsli söhbətləri idarə yetkisi verip, Asistanı gruba atın zəhmət olmasa.\n\nDüzen Tasarım [Cinom Müzik 🎙️](https://t.me/lordchattt).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -22,15 +22,15 @@ async def start(_, message: Message):
                         "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/lordchattt"
+                        "💬 Sohbət", url="https://t.me/lordchattt"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 Komutlar" , callback_data= "cbbilgi"
+                        "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/cinoomusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/cinoomusic"
                     )
                 ]
                 
@@ -47,16 +47,16 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "🔴 Herkes için komutlar", callback_data="herkes")
+                         "🔴 Userler üçün əmrlər", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "⚫ Adminler için komutlar", callback_data="admin")
+                         "⚫ Adminler üçün əmrlər", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
                  ]
              ]
          )
@@ -70,11 +70,11 @@ async def cbbilgi(_, query: CallbackQuery):
       [
         [
           InlineKeyboardButton(
-            "✨Herkes için Komutlar", callback_data ="herkes")
+            "✨Herkes üçün əmrlər", callback_data ="herkes")
         ],
         [
           InlineKeyboardButton(
-            "👑Yönetici Komutları",callback_data ="admin")
+            "👑Admin əmrləri",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "⚙ Geliştirici", url="https://t.me/nevarisoyumiste")
+            "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
                  ],
                  [
                      InlineKeyboardButton(
@@ -139,15 +139,15 @@ async def cbstart(_, query: CallbackQuery):
                         "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/Lordchattt"
+                        "💬 Sohbət", url="https://t.me/Lordchattt"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌀 Komutlar" , callback_data= "cbbilgi"
+                        "🌀 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/CinooMusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/CinooMusic"
                     )
                 ]
                 
