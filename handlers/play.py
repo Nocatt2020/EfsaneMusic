@@ -201,7 +201,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton("🚀 İnfo", url=f"https://t.me/lordchattt"),
                 InlineKeyboardButton("📣 Kanal", url=f"https://t.me/cinoomusic"),
             ],[
-                InlineKeyboardButton("📲 Kapat", callback_data="cls"),
+                InlineKeyboardButton("📲 Bağla", callback_data="cls"),
             ],
         ]
     )
@@ -229,7 +229,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🤔 **Dinlemek istediğin şarkı nedir?**")
-        await lel.edit("🔎 **Lütfen bekleyiniz...**")
+        await lel.edit("🔎 **Zəhmət olmasa gözləyin...**")
         query = message.text.split(None, 1)[1]
         # print(query)
         await lel.edit("🔄 **Ses İşleniyor..🔥**")
@@ -266,7 +266,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton("🚀 İnfo", url=f"https://t.me/lordchattt"),
                 InlineKeyboardButton("📣 Kanal", url=f"https://t.me/cinoomusic"),
             ],[
-                InlineKeyboardButton("📲 Kapat", callback_data="cls"),
+                InlineKeyboardButton("📲 Bağla", callback_data="cls"),
             ],
         ]
     )
