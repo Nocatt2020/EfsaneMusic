@@ -8,8 +8,8 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://telegra.ph//file/a52044f13e042fe0313de.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə mahnı oxuya bilən botam. Ban yetkisiz, Səsli söhbətləri idarə yetkisi verip, Asistanı gruba atın zəhmət olmasa.\n\nDüzen Tasarım [Cinom Müzik 🎙️](https://t.me/Alay57Chat).**"""),
+                "https://telegra.ph/file/764705778ddb95fc06a99.jpg",
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə mahnı oxuya bilən botam. Ban yetkisiz, Səsli söhbətləri idarə yetkisi verip, Asistanı gruba atın zəhmət olmasa.\n\nDüzen Tasarım [Trend Müzik 🎙️](https://t.me/Alay57Chat).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -19,10 +19,10 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
+                        "🔊 Asistan", url="https://t.me/TrendMusicAsistan"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbət", url="https://t.me/lordchattt"
+                        "💬 Sohbət", url="https://t.me/Alay57Chat"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/cinoomusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/Alay57Resmi"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/s1yahımsın")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+            "⚙ Qurucu", url="https://t.me/s1yahımsın")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/s1yahımsın")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/s1yahımsın")
                  ],
                  [
                      InlineKeyboardButton(
@@ -136,10 +136,10 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
+                        "🔊 Asistan", url="https://t.me/TrendMusicAsistan"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbət", url="https://t.me/Lordchattt"
+                        "💬 Sohbət", url="https://t.me/Alay57Chat"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🌀 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/CinooMusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/Alay57Resmi"
                     )
                 ]
                 
